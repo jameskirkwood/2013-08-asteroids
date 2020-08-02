@@ -1,4 +1,4 @@
-from game import pygletembed as pyglet
+import pyglet
 from game import resources, load, player
 
 #init window
@@ -22,8 +22,8 @@ print(world_objects)
 #define mechanics
 def update_all(dt):
 	new_obj_buffer=[]
-	for i in xrange(len(world_objects)):
-		for j in xrange(i+1,len(world_objects)):
+	for i in range(len(world_objects)):
+		for j in range(i+1,len(world_objects)):
 			objA=world_objects[i]
 			objB=world_objects[j]
 			if objA.alive and objB.alive:

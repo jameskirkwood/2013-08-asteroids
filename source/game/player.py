@@ -1,7 +1,7 @@
 import math
-import pygletembed as pyglet
+import pyglet
 from pyglet.window import key
-import resources, world, missile, asteroid
+from . import resources, world, missile, asteroid
 
 class Player(world.WorldObject):
 	def __init__(self,*args,**kwargs):

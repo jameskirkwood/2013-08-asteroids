@@ -1,4 +1,4 @@
-import world, resources, asteroid
+from . import world, resources, asteroid
 
 class Missile(world.WorldObject):
 	def __init__(self,*args,**kwargs):

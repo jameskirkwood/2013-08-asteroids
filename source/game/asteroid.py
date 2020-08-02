@@ -1,6 +1,6 @@
 import random, math
-import pygletembed as pyglet
-import resources, world
+import pyglet
+from . import resources, world
 class Asteroid(world.WorldObject):
 	def __init__(self,*args,**kwargs):
 		super(Asteroid,self).__init__(
@@ -28,7 +28,7 @@ class Asteroid(world.WorldObject):
 			offspring=random.randint(2,5)
 			self.xvel/=offspring
 			self.yvel/=offspring
-			for i in xrange(offspring):
+			for i in range(offspring):
 				new_asteroid=Asteroid(
 					x=self.x,y=self.y,batch=self.batch)
 				new_asteroid.rotation=random.randint(0,360)

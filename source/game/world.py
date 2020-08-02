@@ -1,4 +1,4 @@
-import pygletembed as pyglet
+import pyglet
 from game.util import dist
 
 class WorldObject(pyglet.sprite.Sprite):

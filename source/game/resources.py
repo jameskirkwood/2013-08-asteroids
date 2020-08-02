@@ -1,7 +1,7 @@
-import pygletembed as pyglet
+import pyglet
 
 pyglet.resource.path=["../resources"]
-print pyglet.resource.reindex()
+print(pyglet.resource.reindex())
 
 player_image=pyglet.resource.image("ship.png")
 missile_image=pyglet.resource.image("missile.png")

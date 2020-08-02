@@ -1,6 +1,6 @@
 import random, math
-import pygletembed as pyglet
-import resources, world, asteroid
+import pyglet
+from . import resources, world, asteroid
 
 def d(a=(0,0),b=(0,0)):
 	return math.sqrt((a[0]-b[0])**2+(a[1]-b[1])**2)
